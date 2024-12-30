@@ -122,7 +122,6 @@ impl Node {
         self.childs.iter().filter(move |c| c.name == name)
     }
 
-
     /// Write the XML [`Node`] as a character stream to the given [`Writer`]. Internal function only.
     ///
     /// # Errors

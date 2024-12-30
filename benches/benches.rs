@@ -31,5 +31,12 @@ fn parse_large_str_to_node(c: &mut Criterion) {
     c.bench_function("large", |b| b.iter(|| Node::from_str(LARGE_XML_STR)));
 }
 
-criterion_group!(benches, parse_definition_str_to_node, parse_join_str_to_node, parse_scores_str_to_node, parse_winner_str_to_node, parse_large_str_to_node);
+criterion_group!(
+    benches,
+    parse_definition_str_to_node,
+    parse_join_str_to_node,
+    parse_scores_str_to_node,
+    parse_winner_str_to_node,
+    parse_large_str_to_node
+);
 criterion_main!(benches);
