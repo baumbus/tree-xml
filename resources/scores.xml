@@ -1,0 +1,18 @@
+<scores>
+    <entry>
+        <player name="Spieler 1" team="ONE"/>
+        <score>
+            <part>0</part>
+            <part>0</part>
+            <part>0</part>
+        </score>
+    </entry>
+    <entry>
+        <player name="Spieler 2" team="TWO"/>
+        <score>
+            <part>2</part>
+            <part>63</part>
+            <part>0</part>
+        </score>
+    </entry>
+</scores>

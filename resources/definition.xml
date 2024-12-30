@@ -1,0 +1,14 @@
+<definition>
+    <fragment name="Siegpunkte">
+        <aggregation>SUM</aggregation>
+        <relevantForRanking>true</relevantForRanking>
+    </fragment>
+    <fragment name="Feldnummer">
+        <aggregation>AVERAGE</aggregation>
+        <relevantForRanking>true</relevantForRanking>
+    </fragment>
+    <fragment name="Karotten">
+        <aggregation>AVERAGE</aggregation>
+        <relevantForRanking>true</relevantForRanking>
+    </fragment>
+</definition>

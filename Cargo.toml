@@ -1,0 +1,28 @@
+[package]
+name = "tree-xml"
+version = "0.1.0"
+edition = "2021"
+readme = "README.md"
+license = "MIT"
+repository = "https://github.com/baumbus/software-challenge-2025"
+categories = ["parser-implementations", "parsing"]
+keywords = ["xml", "xml-parser", "treeview"]
+description = "XML parser with tree representation"
+
+[features]
+log = ["dep:log"]
+
+[dependencies]
+quick-xml = "0.37.2"
+log = { version = "0.4.22", optional = true }
+thiserror = "2.0.9"
+
+[dev-dependencies]
+pretty_assertions = "1.4"
+test-case = "3.3.1"
+criterion = { version = "0.5.1", features = ["html_reports"] }
+
+[[bench]]
+name = "benches"
+harness = false
+path = "./benches/benches.rs"
